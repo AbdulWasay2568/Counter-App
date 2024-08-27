@@ -26,7 +26,6 @@ cd CounterApp
 Make sure you have Node.js and npm installed. Then run:
 
 npm install
-Start the Application:
 
 
 **Technologies Used**
