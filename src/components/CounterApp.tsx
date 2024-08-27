@@ -26,7 +26,6 @@ export default function CounterApp() {
     setCounts([0]);
   };
 
-  // Ensure the count starts at 0 on page load
   useEffect(() => {
     setCounts([0]);
   }, []);
@@ -36,17 +35,17 @@ export default function CounterApp() {
       <h1 className="text-xl font-bold">Counter App</h1>
       <div className="flex gap-3 items-center">
         <button 
-          onClick={() => handleIncrement(0)} 
-          className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
-        >
-          +
-        </button>
-        <p className="text-xl">{counts[0]}</p>
-        <button 
           onClick={() => handleDecrement(0)} 
           className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
         >
           -
+        </button>
+        <p className="text-xl">{counts[0]}</p>
+        <button 
+          onClick={() => handleIncrement(0)} 
+          className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+        >
+          +
         </button>
       </div>
       <button 
